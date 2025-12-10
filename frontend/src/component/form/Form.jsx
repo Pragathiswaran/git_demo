@@ -1,14 +1,13 @@
 import React from 'react'
 import './../../styles/form.css'
 
-function Form() {
+function Form({children, ...props}) {
   return (
    <>
     <div className='form-container'>
       <h2>Sign Up</h2>
-      <form className='form'>
-        <div className='form-field-container'></div>
-        <div className='form-submit-container'></div>
+      <form className='form' {...props}>
+        {children}
       </form>
     </div>
    </>

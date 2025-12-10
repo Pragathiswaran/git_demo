@@ -1,13 +1,16 @@
 import { useState } from 'react'
 import Button from './component/common/Button'
 import Input from './component/common/Input'
+import Form from './component/form/Form'
 
 function App() {
 
   return (
     <>
-      <Button label={"Hello"}></Button>
-      <Input placeholder={"Hello world!!!"}></Input>
+      <Form>
+         <Input placeholder={"Hello world!!!"}></Input>
+         <Button label={"Hello"}></Button>
+      </Form>
     </>
   )
 }
